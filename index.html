@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram </title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #111;
+      font-family: 'Roboto', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      width: 375px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      font-size: 1.6em;
+      font-weight: bold;
+      border-bottom: 1px solid #d3d3d3;
+    }
+    .header span {
+      margin-left: 8px;
+      font-size: 1.3em;
+    }
+    .stories {
+      display: flex;
+      padding: 16px 8px 8px 8px;
+      overflow-x: auto;
+      background: #fff;
+    }
+    .story {
+      flex-shrink: 0;
+      width: 60px;
+      margin-right: 12px;
+      text-align: center;
+    }
+    .story .avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 3px solid #d02c77;
+      display: block;
+      margin: 0 auto 4px auto;
+      object-fit: cover;
+    }
+    .story-name {
+      font-size: 0.78em;
+      margin-top: 2px;
+      color: #555;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .suggested {
+      font-size: 0.9em;
+      color: #888;
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+    }
+    .suggested button {
+      margin-left: 8px;
+      padding: 2px 10px;
+      border: none;
+      background: #3897f0;
+      color: #fff;
+      font-size: 0.9em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .post-image {
+      width: 100%;
+      display: block;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #eee;
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px 6px 16px;
+      font-size: 1.5em;
+    }
+    .actions span {
+      margin-right: 18px;
+      cursor: pointer;
+    }
+    .caption-section {
+      padding: 0 16px 16px 16px;
+      font-size: 1em;
+      color: #333;
+    }
+    .caption-section .username {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+      background: #fff;
+    }
+    .bottom-nav i {
+      font-size: 1.9em;
+      color: #444;
+      cursor: pointer;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      Instagram
+      <span style="flex:1"></span>
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-paper-plane" style="margin-left:12px;"></i>
+    </div>
+    <div class="stories">
+      <div class="story">
+        <img class="avatar" src="hari.jpg" alt="your story">
+        <div class="story-name">your story</div>
+      </div>
+      <div class="story">
+        <img class="avatar" src="harini.jpg" alt="its_harini">
+        <div class="story-name">its_harini</div>
+      </div>
+      <div class="story">
+        <img class="avatar" src="keerthi.jpg" alt="i_am_keerthi">
+        <div class="story-name">i_am_keerthi</div>
+      </div>
+      <div class="story">
+        <img class="avatar" src="nandhini.png" alt="nandhini25">
+        <div class="story-name">nandhini25</div>
+      </div>
+      <div class="story">
+        <img class="avatar" src="stars.webp" alt="shiny_girl5">
+        <div class="story-name suggested">shiny_girl5
+          <button>Follow</button>
+        </div>
+      </div>
+    </div>
+    <img src="shine.jpeg" alt="post" class="post-image">
+    <div class="actions">
+      <span><i class="fa-solid fa-heart"></i></span>
+      <span><i class="fa-regular fa-comment"></i></span>
+      <span><i class="fa-regular fa-paper-plane"></i></span>
+      <span style="margin-left:auto;"><i class="fa-regular fa-bookmark"></i></span>
+    </div>
+    <div class="caption-section">
+      <span class="username">Liked by i_am_keerthi</span><br>
+      <h4>what a beautiful shine....</h4> 
+    </div>
+    <div class="bottom-nav">
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-square-plus"></i>
+      <i class="fa-solid fa-clapperboard"></i>
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </div>
+</body>
+</html>
